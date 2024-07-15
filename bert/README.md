@@ -13,6 +13,9 @@ This repository contains an implementation of BERT, a powerful pre-training arch
   - Question Answering
   - Text classification
 
-## References
+## Paper
 
 [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)
+
+## Other References
+[PyTorch Implementation of BERT: Architecture, Dataset, Training, Inference](https://github.com/codertimo/BERT-pytorch)
