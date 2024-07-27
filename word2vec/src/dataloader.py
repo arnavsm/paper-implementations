@@ -79,7 +79,7 @@ class CustomDataset(Dataset):
         self.root_dir = root_dir
         self.w = window_size
         self.english = open(os.path.join(
-            root_dir, "data1.txt")).read().split("\n")[:-1]
+            root_dir, "data/data1.txt")).read().split("\n")[:-1]
 
         if vocab is None:
             self.vocab_en = EngVocabulary(frequency_threshold_en)
@@ -180,7 +180,7 @@ def make_words():
                         [vocab.itos[c_word], vocab.itos[context[a, b].item()]])
             words = words[:-1]
         df = pd.DataFrame(words)
-        df.to_csv('data.csv', index=False, mode='a',
+        df.to_csv('../data/data.csv', index=False, mode='a',
                   columns=None, header=False)
         del df, words
     return train_set, train_loader
@@ -190,7 +190,7 @@ class WordDataset(Dataset):
     def __init__(self, vocab):
         super(WordDataset, self).__init__()
         self.vocab = vocab
-        self.pairs = pd.read_csv("data.csv", header=None)
+        self.pairs = pd.read_csv("../data/data.csv", header=None)
 
     def get_data(self):
         return self.pairs
@@ -203,7 +203,7 @@ class WordDataset(Dataset):
 
 
 def get_word_loader(batch_size, shuffle):
-    path = os.path.join(os.getcwd(), 'data.csv')
+    path = os.path.join(os.getcwd(), 'data/data.csv')
     if not os.path.exists(path):
         train_set, _ = make_words()
     else:
