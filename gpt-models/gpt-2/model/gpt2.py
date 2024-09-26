@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.utils.checkpoint
 from functools import partial
+
 from masking import PaddingMask, FutureMasking
 from embeddings import WordEmbeddings, PositionalEmbedding, PositionalEncoding
 from feedforward import PositionwiseFeedForward
