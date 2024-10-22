@@ -4,7 +4,7 @@ from typing import List, Tuple, Dict
 
 def read_file(filepath: str) -> str:
     with open(filepath, "r", encoding="utf-8") as f:
-        return f.read().lower()
+        return f.read()
 
 class BPETokenizer:
     def __init__(self, num_merges: int = 100):
