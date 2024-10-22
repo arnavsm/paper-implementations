@@ -83,6 +83,7 @@ class BPETokenizer:
 
         return tokens
 
+
 def main():
     filepath = "bpe/corpus.txt"
     iters = 200
@@ -96,6 +97,7 @@ def main():
     test_text = "Arnav says Hi!"
     tokens = tokenizer.tokenize(test_text)
     print("Tokens:", tokens)
+
 
 if __name__ == "__main__":
     main()
