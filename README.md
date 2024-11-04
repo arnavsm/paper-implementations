@@ -1,2 +1,2 @@
-# paper-implementations
-my implementations of significant research papers in ai
+# Paper Implementations
+My Implementations of Significant Research Papers in AI
