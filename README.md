@@ -1,2 +1,2 @@
 # Paper Implementations
-My Implementations of Significant Research Papers in AI
+My implementations of machine learning papers for practice and learning
