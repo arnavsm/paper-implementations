@@ -1,0 +1,5 @@
+ChatGPT: https://chatgpt.com/share/68b884a1-e188-8004-badb-f899b35598a5 - https://chatgpt.com/share/68b8851f-75d0-8004-9c86-5397369b9106
+PD: https://youtu.be/laaBLUxJUMY?si=ZB3da_1oOpOQ3nif
+
+More for VAEs:
+- JointVAE: https://arxiv.org/abs/1804.00104 - https://github.com/Schlumberger/joint-vae
